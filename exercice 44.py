@@ -18,4 +18,8 @@ elif pgto == 3:
     print(' O valor da sua compra será de R$ {:.2f} pago em duas vezes de R${:.2f}'.format(preco,V3))
 elif pgto == 4:
     V4 = preco * 1.2
-    print(' O valor da sua compra será de R$ {:.2f}'.format(V4))
+    quant = int(input('Quantas parcelas ? '))
+    parcela = preco / quant
+    print(' O valor da sua compra será de R$ {:.2f} dividida em {:.2f} parcelas de R$ {:.2f}'.format(V4,quant,parcela))
+else:
+    print(' Opção inválida de pagamento')
